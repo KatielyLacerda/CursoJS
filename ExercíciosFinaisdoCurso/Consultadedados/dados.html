@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="topo">
+        <strong><span id="titulo">Consulta de Dados</span></strong>
+    </div>
+    <div class="container">
+        <div class="question">
+            <label for="txtnome"><strong>Digite seu nome:</strong></label>
+            <input type="text" name="txtnome" id="txtnome" placeholder="Resposta">
+        </div>
+        <div class="question">
+            <label for="sobrenome"><strong>Digite seu sobrenome:</strong></label>
+            <input type="text" name="sobrenome" id="txtsobrenome" placeholder="Resposta">
+        </div>
+        <div class="question">
+            <label for="email"><strong>Digite seu E-mail:</strong></label>
+            <input type="text" name="email" id="email" placeholder="Resposta">
+        </div>
+        <div class="question">
+            <label for="pronomes"><strong>Selecione seu gênero:</strong></label>
+            <select id="pronomes" name="pronome">
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="não-binário">Não-Binário</option>
+                <option value="prefere-nao-informar">Prefere não informar</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="cpf"><strong>Digite seu CPF:</strong></label>
+            <input type="text" id="cpf" placeholder="Resposta">
+        </div>
+        <div class="question">
+            <label for="telefone"><strong>Digite seu telefone:</strong></label>
+            <input type="text" id="telefone" placeholder="Resposta">
+        </div>
+        <div class="question">
+            <label for="dataNascimento"><strong>Digite sua data de nascimento:</strong></label>
+            <input type="date" id="dataNascimento" placeholder="Resposta">
+        </div>
+        <div class="question">
+            <label for="cep"><strong>Digite seu CEP:</strong></label>
+            <input type="text" id="cep" placeholder="Resposta">
+        </div>
+        <div class="button-container">
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div class="resposta" id="res">
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Katiely F. de Lacerda</p>
+    </footer>
+    <div class="help-icon">?</div>
+    <div class="balao-mensagem" style="display: none;"> Este site é totalmente seguro!<br>Os desenvolvedores não terão acesso aos seus dados:)</div>
+    <script src="script.js"></script>
+</body>
+</html>

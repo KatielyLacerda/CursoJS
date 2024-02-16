@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ot-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center ;
+        }
+    </style>
+</head>
+<body>
+    <!-- posso fazer assim a ligação pras funções mas isso deixa o 
+        html muito poluido, por isso é preferivel fazer no javascript
+        usando o prosprios eventos DoM
+         <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+           Interaja...
+    </div>
+    -->
+    <div  id="area">
+        Interaja...
+    </div>
+    
+    
+    <script>
+        var a= window.document.getElementById('area')
+        //usando eventos DOM pra manipular as funções
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText= 'clicou'
+            a.style.background= 'red'
+        }
+        function entrar(){
+            a.innerText='Entrou'
+        }
+        function sair(){
+            a.innerText='Saiu'
+            a.style.background= 'green'
+        }
+
+    </script>
+    
+</body>
+</html>

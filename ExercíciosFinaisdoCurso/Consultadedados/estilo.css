@@ -1,0 +1,157 @@
+#topo {
+    /* Estilos para a div topo */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: black;
+    font-size: 80px;
+    font-family: 'Bakemono-Stereo-Medium-trial', sans-serif;
+    margin-top: 45px;
+    
+}
+
+
+
+body {
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 100px auto 20px;
+}
+.question {
+    margin-bottom: 20px;
+    font-family: 'Bakemono-Stereo-Medium-trial', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.question button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.question input,
+.question select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resposta {
+    background-color: palevioletred;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'NixieOne', sans-serif;
+    font-weight: 800;
+}
+/*fonte do título*/
+@font-face {
+    font-family: 'Bakemono-Stereo-Medium-trial';
+    src: url('Bakemono-Stereo-Medium-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'NixieOne'; 
+    src: url('NixieOne.ttf') format('truetype'); 
+    
+}    
+
+footer {
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'NixieOne', sans-serif; 
+    font-weight: 800; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+/*css do botão verificar*/
+.button-container input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'NixieOne', sans-serif; 
+    font-weight: 800; 
+    /* Outras propriedades de estilo que desejar */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button-container input[type="button"]:hover {
+    background-color: #0056b3; /*deixa mais escuro quando fico com o cursor em cima*/
+    
+}
+/* botão de ajuda*/
+.help-icon {
+    position: fixed; /* Define a posição fixa na tela */
+    bottom: 20px; /* Define a distância do fundo da tela */
+    right: 20px; /* Define a distância da direita da tela */
+    width: 40px; /* Largura do ícone */
+    height: 40px; /* Altura do ícone */
+    background-color: rgb(221, 221, 86); /* Cor de fundo do ícone */
+    border: 1px solid black; /* Define uma borda preta fina */
+    border-radius: 50%; /* Torna o ícone redondo */
+    text-align: center; /* Centraliza o texto */
+    line-height: 40px; /* Centraliza verticalmente o texto */
+    font-size: 24px; /* Tamanho da fonte do ícone */
+    cursor: pointer; /* Mostra que é um elemento clicável */
+}
+/*balão da fala*/
+.balao-mensagem {
+    position: fixed;
+    bottom: 70px; /* Posição do balão em relação ao ícone */
+    right: 80px; /* Posição do balão em relação ao ícone */
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: none;
+    font-family: 'Bakemono-Stereo-Medium-trial', sans-serif;
+    
+    
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo o DOM</title>
+    <style>
+        body{
+            background-color: bisque;
+            color:black;
+            font: normal 18pt arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Dando os primeiros passos com DOM</h1>
+    <p>Aqui vai o resultado </p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
+    <div id="msg"> Clique em mim</div>
+    <div name="segunda">Clique em mim versão dois</div>
+    
+    <script>
+        //acessando usando a marca/tag pra mexer em dados elemento
+        //nesse caso estou mexendo no primeiro paragrafo = p[0]
+        var p1=window.document.getElementsByTagName('p')[1]
+        p1.style.color="blue"
+        /*
+        //posso mudar a cor do corpo sem mexer lá em cima
+        var corpo=window.document.body
+        corpo.style.background="pink"
+        //o innerHTML escreve na tela o p1, contando com o html e css que tiver nessa tag
+        document.write(p1.innerHTML)
+        //sou selecionar usando id agora, por isso colocou id na div lá em cima
+        var d=window.document.getElementById('msg')
+        d.style.background="green"
+        //d.innerText='Estou aguardando' caos eu queira mudar o texto
+        //posso selecionar por name também 
+        var b=document.getElementsByName('segunda')[0]
+        b.innerText= 'Ola!'
+        */
+        var d= window.document.querySelector('div#msg ')
+        d.style.background="purple"
+
+    </script>
+</body>
+</html>
